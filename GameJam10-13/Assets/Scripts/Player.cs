@@ -13,6 +13,9 @@ public class Player : MonoBehaviour {
 	private bool harpLoaded = true;
 	public bool canMove = true;
 	private Rigidbody2D RB2D;
+	public float jCR;
+	public LayerMask layer;
+	public bool canJump;
 
 	[Header("Obects")]
 	public GameObject firePos, harpoonGO;
@@ -47,16 +50,21 @@ public class Player : MonoBehaviour {
 
 	}
 	void move(float x){
+		canJump = Physics2D.Raycast (this.transform.position, Vector2.down, jCR, layer);
+	
 		if (canMove) {
 			if (isUW) {
 				RB2D.velocity = new Vector2 (x * UWMS, RB2D.velocity.y);
-				if (Input.GetKeyDown (jumpKey)) {
+				if (Input.GetKeyDown (jumpKey) && canJump) {
 					RB2D.velocity = new Vector2 (x * UWMS, jump);
 
 				}
 			} else {
 				RB2D.velocity = new Vector2 (x * moveSpeed, RB2D.velocity.y);
+				if (Input.GetKeyDown (jumpKey) && canJump) {
+					RB2D.velocity = new Vector2 (x * UWMS, (jump*.2f));
 
+				}
 			}
 
 		}
