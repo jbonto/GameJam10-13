@@ -16,7 +16,7 @@ public class Player : MonoBehaviour {
 	private CircleCollider2D meleeHB;
 	private Rigidbody2D RB2D;
 	public float jCR;
-	public LayerMask layer;
+	public LayerMask layer, eLayer;
 	public bool canJump;
 
 	[Header("Obects")]
@@ -55,7 +55,12 @@ public class Player : MonoBehaviour {
 	}
 
 	void move(float x){
-		canJump = Physics2D.Raycast (this.transform.position, Vector2.down, jCR, layer);
+		if (Physics2D.Raycast (this.transform.position, Vector2.down, jCR, layer) ||
+		    Physics2D.Raycast (this.transform.position, Vector2.down, jCR, eLayer)) {
+			canJump = true;
+		} else {
+			canJump = false;
+		}
 		if (canMove) {
 			if (isUW) {
 				RB2D.velocity = new Vector2 (x * UWMS, RB2D.velocity.y);
