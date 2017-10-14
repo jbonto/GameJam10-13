@@ -1,0 +1,532 @@
+fileFormatVersion: 2
+guid: 965f48814a9446e429861d5c6f9f236f
+timeCreated: 1508013584
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Barnacle_0
+    21300002: Barnacle_1
+    21300004: Barnacle_2
+    21300006: Barnacle_3
+    21300008: Barnacle_4
+    21300010: Barnacle_5
+    21300012: Barnacle_6
+    21300014: Barnacle_7
+    21300016: Barnacle_8
+    21300018: Barnacle_9
+    21300020: Barnacle_10
+    21300022: Barnacle_11
+    21300024: Barnacle_12
+    21300026: Barnacle_13
+    21300028: Barnacle_14
+    21300030: Barnacle_15
+    21300032: Barnacle_16
+    21300034: Barnacle_17
+    21300036: Barnacle_18
+    21300038: Barnacle_19
+    21300040: Barnacle_20
+    21300042: Barnacle_21
+    21300044: Barnacle_22
+    21300046: Barnacle_23
+    21300048: Barnacle_24
+    21300050: Barnacle_25
+    21300052: Barnacle_26
+    21300054: Barnacle_27
+    21300056: Barnacle_28
+    21300058: Barnacle_29
+    21300060: Barnacle_30
+    21300062: Barnacle_31
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Barnacle_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 182
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4821738, y: 0.9185715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 182
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4399996, y: 0.9185715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 182
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4843478, y: 0.9185715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 182
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0.48434746, y: 0.9185715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_4
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 182
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0.48347804, y: 0.91999924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_5
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 182
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0.48086947, y: 0.9185715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 146
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0.48312506, y: 0.918929}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_7
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 146
+        width: 23
+        height: 15
+      alignment: 9
+      pivot: {x: 0.48312494, y: 0.85793763}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_8
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 146
+        width: 23
+        height: 16
+      alignment: 9
+      pivot: {x: 0.48312512, y: 0.80322266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_9
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 146
+        width: 23
+        height: 22
+      alignment: 9
+      pivot: {x: 0.48312512, y: 0.58429027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_10
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 146
+        width: 23
+        height: 26
+      alignment: 9
+      pivot: {x: 0.48593736, y: 0.49502447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_11
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 146
+        width: 24
+        height: 28
+      alignment: 9
+      pivot: {x: 0.4650167, y: 0.4589664}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 110
+        width: 25
+        height: 28
+      alignment: 9
+      pivot: {x: 0.44479987, y: 0.4599999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_13
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 110
+        width: 27
+        height: 28
+      alignment: 9
+      pivot: {x: 0.45409733, y: 0.45681626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 110
+        width: 29
+        height: 28
+      alignment: 9
+      pivot: {x: 0.45830536, y: 0.45681626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 110
+        width: 29
+        height: 28
+      alignment: 9
+      pivot: {x: 0.4562207, y: 0.45681626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 110
+        width: 29
+        height: 28
+      alignment: 9
+      pivot: {x: 0.45726275, y: 0.45681626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_17
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 110
+        width: 29
+        height: 30
+      alignment: 9
+      pivot: {x: 0.45413578, y: 0.4264435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 74
+        width: 29
+        height: 30
+      alignment: 9
+      pivot: {x: 0.35175523, y: 0.4270925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_19
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 74
+        width: 29
+        height: 30
+      alignment: 9
+      pivot: {x: 0.45493105, y: 0.4270925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_20
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 74
+        width: 29
+        height: 28
+      alignment: 9
+      pivot: {x: 0.4558508, y: 0.45808437}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_21
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 74
+        width: 29
+        height: 28
+      alignment: 9
+      pivot: {x: 0.45401105, y: 0.4571318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_22
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 74
+        width: 29
+        height: 28
+      alignment: 9
+      pivot: {x: 0.45401105, y: 0.4571318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_23
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 74
+        width: 27
+        height: 28
+      alignment: 9
+      pivot: {x: 0.45060447, y: 0.45808437}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 38
+        width: 25
+        height: 28
+      alignment: 9
+      pivot: {x: 0.4458482, y: 0.4581585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_25
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 38
+        width: 24
+        height: 28
+      alignment: 9
+      pivot: {x: 0.4652872, y: 0.45629898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_26
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 38
+        width: 23
+        height: 26
+      alignment: 9
+      pivot: {x: 0.4852849, y: 0.49299064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_27
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 38
+        width: 23
+        height: 22
+      alignment: 9
+      pivot: {x: 0.48415276, y: 0.58283734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_28
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 38
+        width: 23
+        height: 16
+      alignment: 9
+      pivot: {x: 0.48528457, y: 0.8026519}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_29
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 38
+        width: 23
+        height: 15
+      alignment: 9
+      pivot: {x: 0.48429605, y: 0.8579895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0.48877835, y: 0.9108467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Barnacle_31
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4855723, y: 0.9108467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

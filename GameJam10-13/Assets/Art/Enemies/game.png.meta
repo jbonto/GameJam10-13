@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: 888e1a1047e30be448ffd35b62a59999
+timeCreated: 1508014231
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: game_0
+    21300002: game_1
+    21300004: game_2
+    21300006: game_3
+    21300008: game_4
+    21300010: game_5
+    21300012: game_6
+    21300014: game_7
+    21300016: game_8
+    21300018: game_9
+    21300020: game_10
+    21300022: game_11
+    21300024: game_12
+    21300026: game_13
+    21300028: game_14
+    21300030: game_15
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: game_0
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1118
+        width: 97
+        height: 50
+      alignment: 9
+      pivot: {x: 0.51011735, y: 0.5490698}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_1
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1118
+        width: 99
+        height: 47
+      alignment: 9
+      pivot: {x: 0.49, y: 0.58352464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_2
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1116
+        width: 97
+        height: 50
+      alignment: 9
+      pivot: {x: 0.52, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_3
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1049
+        width: 98
+        height: 51
+      alignment: 9
+      pivot: {x: 0.51, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_4
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1034
+        width: 106
+        height: 66
+      alignment: 9
+      pivot: {x: 0.55, y: 0.64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_5
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1054
+        width: 129
+        height: 50
+      alignment: 9
+      pivot: {x: 0.628, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_6
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 917
+        width: 81
+        height: 61
+      alignment: 9
+      pivot: {x: 0.37531006, y: 0.2576304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_7
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 907
+        width: 162
+        height: 72
+      alignment: 9
+      pivot: {x: 0.403079, y: 0.38555992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_8
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 916
+        width: 98
+        height: 69
+      alignment: 9
+      pivot: {x: 0.4873875, y: 0.22667041}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_9
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 649
+        width: 162
+        height: 231
+      alignment: 9
+      pivot: {x: 0.42879194, y: 0.7354192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_10
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 756
+        width: 147
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5021794, y: 0.5029297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_11
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 877
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_12
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 797
+        width: 107
+        height: 80
+      alignment: 9
+      pivot: {x: 0.52652407, y: 0.2739807}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_13
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 836
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_14
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 798
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: game_15
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 649
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
