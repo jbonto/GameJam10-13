@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 	public int HP;
+	public tentacle waterMod;
 	// Use this for initialization
 	void Start () {
 		
@@ -16,7 +17,12 @@ public class Enemy : MonoBehaviour {
 		}
 	}
 	public void hit(){
-		HP--;
+		if (HP != 999) {
+			HP--;
+		}
+		if (waterMod) {
+			waterMod.onHit ();
+		}
 	}
 	void OnCollisionEnter2D(Collision2D col){
 		//Debug.Log ("col");

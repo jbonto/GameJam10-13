@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour {
 	[Header("Player Stats")]
 	public int playerHP;
-	public float oxygen;
+	public float oxygen, maxO2;
 	public float moveSpeed, UWMS;
 	public float jump, UWJ;
 	public bool isUW; // isUnderWater
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		BoxCollider2D[] BCS = GetComponents<BoxCollider2D> ();
+		maxO2 = oxygen;
 		RB2D = GetComponent<Rigidbody2D> ();
 		meleeHB = GetComponent<CircleCollider2D> ();
 		harpState.text = "You have a harpoon loaded.  You have "+harpoons.ToString()+" spare harpoons";
@@ -45,6 +45,10 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		/**
+		 * 
+		 * 
+		 * */
 		float hAxis = Input.GetAxis ("h");
 		move (hAxis);
 		harpoonActions ();
@@ -129,7 +133,9 @@ public class Player : MonoBehaviour {
 	}
 
 	public void getAir(){
-		oxygen += .15f;
+		if (oxygen < maxO2) {
+			oxygen += .15f;
+		}
 		breathText.text = oxygen.ToString ("F0");
 	}
 
@@ -171,9 +177,7 @@ public class Player : MonoBehaviour {
 				if (col.GetComponent<Enemy> ()) {
 					col.GetComponent<Enemy> ().hit ();
 				} else {
-					if (col.GetComponent<angler> ()) {
-						col.GetComponent<angler> ().hitRec ();
-					}
+					
 				}
 			}
 		}

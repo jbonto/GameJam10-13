@@ -47,15 +47,19 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Harpoon.cs" />
+     <Compile Include="Assets\Scripts\Plank.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\airBubble.cs" />
      <Compile Include="Assets\Scripts\enemies\Enemy.cs" />
+     <Compile Include="Assets\Scripts\enemies\Kraken.cs" />
      <Compile Include="Assets\Scripts\enemies\angler.cs" />
      <Compile Include="Assets\Scripts\enemies\bat.cs" />
      <Compile Include="Assets\Scripts\enemies\enemyMove.cs" />
+     <Compile Include="Assets\Scripts\enemies\tentacle.cs" />
      <Compile Include="Assets\Scripts\playerAnim.cs" />
      <Compile Include="Assets\Scripts\playerTurn.cs" />
+     <Compile Include="Assets\cameraScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
