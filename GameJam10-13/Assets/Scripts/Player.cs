@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
 	public float harpoons = 2F;
 	private bool harpLoaded = true;
 	public bool canMove = true;
+	private BoxCollider2D meleeHB;
 	private Rigidbody2D RB2D;
 	public float jCR;
 	public LayerMask layer;
@@ -27,11 +28,13 @@ public class Player : MonoBehaviour {
 
 	[Header("Anything Else.")]
 	public playerTurn pT;
-	public KeyCode jumpKey, fireKey, rLkey;
+	public KeyCode jumpKey, fireKey, rLkey, mKey;
 
 	// Use this for initialization
 	void Start () {
+		BoxCollider2D[] BCS = GetComponents<BoxCollider2D> ();
 		RB2D = GetComponent<Rigidbody2D> ();
+		meleeHB = BCS [1];
 		harpState.text = "You have a harpoon loaded";
 		hpText.text = playerHP.ToString ();
 		breathText.text = oxygen.ToString ();
@@ -99,10 +102,23 @@ public class Player : MonoBehaviour {
 			harpState.text = "You cannot fire until you reload a harpoon";
 			harpLoaded = false;
 		}
+		if (Input.GetKeyDown (mKey) && harpLoaded) {
+			StartCoroutine (jab ());
+		}
 
 	}
-
+	IEnumerator jab(){
+		yield return new WaitForSeconds (.3f);
+		meleeHB.offset = new Vector2 (2.8f, 1.19f);
+		yield return new WaitForSeconds (.6f);
+		meleeHB.offset = new Vector2 (0f, 1.19f);
+	}
 	public void harpPickUp(){
 		harpoons++;
+	}
+	void OnTriggerEnter2D(Collider2D col){
+		if (col.transform.tag == "Enemy") {
+			col.GetComponent<Enemy> ().hit ();
+		}
 	}
 }
