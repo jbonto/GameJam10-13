@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\enemies\bat.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player.cs" Line="38" Column="1" />
-      <File FileName="Assets\Scripts\Harpoon.cs" Line="30" Column="53" />
+      <File FileName="Assets\Scripts\Player.cs" Line="62" Column="20" />
+      <File FileName="Assets\Scripts\Harpoon.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\airBubble.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\playerTurn.cs" Line="19" Column="19" />
-      <File FileName="Assets\Scripts\enemies\angler.cs" Line="17" Column="58" />
-      <File FileName="Assets\Scripts\enemies\bat.cs" Line="21" Column="29" />
+      <File FileName="Assets\Scripts\playerTurn.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\enemies\angler.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\enemies\bat.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
