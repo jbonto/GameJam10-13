@@ -15,8 +15,11 @@ public class playerTurn : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (this.GetComponent<Player> ().isMelee) {
+			direction = 0f;
+		} else {
 			direction = Input.GetAxis ("h");
+		}
 			if ((direction < 0) && (facingRight == true)) {
 				Vector3 theScale = body.transform.localScale;
 				theScale.x *= -1;
