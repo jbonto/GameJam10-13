@@ -24,9 +24,10 @@ public class Harpoon : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.transform.tag == "Enemy") {
-			if (!hasHit) {
+			if (!hasHit && col.transform.GetComponent<Enemy> ()) {
 				col.transform.GetComponent<Enemy> ().hit ();
-
+			} else if (!hasHit && col.transform.GetComponent<angler>()){
+				col.transform.GetComponent<angler> ().hitRec ();
 			}
 		}
 		if (col.transform.tag == "Player") {

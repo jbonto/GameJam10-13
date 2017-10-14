@@ -12,14 +12,15 @@ public class Player : MonoBehaviour {
 	public float harpoons = 2F;
 	private bool harpLoaded = true;
 	public bool canMove = true;
-	private BoxCollider2D meleeHB;
+	//private BoxCollider2D meleeHB;
+	private CircleCollider2D meleeHB;
 	private Rigidbody2D RB2D;
 	public float jCR;
 	public LayerMask layer;
 	public bool canJump;
 
 	[Header("Obects")]
-	public GameObject firePos, harpoonGO;
+	public GameObject firePos, harpoonGO, hi;
 
 	[Header("UI")]
 	public Text hpText;
@@ -36,8 +37,8 @@ public class Player : MonoBehaviour {
 	void Start () {
 		BoxCollider2D[] BCS = GetComponents<BoxCollider2D> ();
 		RB2D = GetComponent<Rigidbody2D> ();
-		meleeHB = BCS [1];
-		harpState.text = "You have a harpoon loaded";
+		meleeHB = GetComponent<CircleCollider2D> ();
+		harpState.text = "You have a harpoon loaded.  You have "+harpoons.ToString()+" spare harpoons";
 		hpText.text = playerHP.ToString ();
 		breathText.text = oxygen.ToString ();
 	}
@@ -64,7 +65,7 @@ public class Player : MonoBehaviour {
 			} else {
 				RB2D.velocity = new Vector2 (x * moveSpeed, RB2D.velocity.y);
 				if (Input.GetKeyDown (jumpKey) && canJump) {
-					RB2D.velocity = new Vector2 (x * UWMS, (jump*.2f));
+					RB2D.velocity = new Vector2 (x * UWMS, (jump*.65f));
 				}
 			}
 		}
@@ -75,7 +76,7 @@ public class Player : MonoBehaviour {
 			harpoons--;
 			harpLoaded = true;
 			//Debug.Log ("You reloaded your harpoon");
-			harpState.text = "You have a harpoon loaded";
+			harpState.text = "You have a harpoon loaded.  You have "+harpoons.ToString()+" spare harpoons";
 
 		} 
 		if (Input.GetKeyDown (fireKey) && harpLoaded && !isMelee) {
@@ -112,6 +113,10 @@ public class Player : MonoBehaviour {
 
 	public void harpPickUp(){
 		harpoons++;
+		if (harpLoaded) {
+			harpState.text = "You have a harpoon loaded.  You have "+harpoons.ToString()+" spare harpoons";
+
+		}
 	}
 
 	public Rigidbody2D getRB(){
@@ -124,6 +129,7 @@ public class Player : MonoBehaviour {
 	}
 
 	public void playerHurt(int x, float ex){
+		Debug.Log (ex);
 		if (canHurt) {
 			//Debug.Log ("ow");
 			playerHP -= x;
@@ -155,9 +161,15 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
-		if (col.transform.tag == "Enemy") {
-			if (col.GetComponent<Enemy> ()) {
-				col.GetComponent<Enemy> ().hit ();
+		if (isMelee) {
+			if (col.transform.tag == "Enemy") {
+				if (col.GetComponent<Enemy> ()) {
+					col.GetComponent<Enemy> ().hit ();
+				} else {
+					if (col.GetComponent<angler> ()) {
+						col.GetComponent<angler> ().hitRec ();
+					}
+				}
 			}
 		}
 	}

@@ -51,6 +51,8 @@
      <Compile Include="Assets\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\airBubble.cs" />
      <Compile Include="Assets\Scripts\enemies\Enemy.cs" />
+     <Compile Include="Assets\Scripts\enemies\angler.cs" />
+     <Compile Include="Assets\Scripts\enemies\bat.cs" />
      <Compile Include="Assets\Scripts\enemies\enemyMove.cs" />
      <Compile Include="Assets\Scripts\playerAnim.cs" />
      <Compile Include="Assets\Scripts\playerTurn.cs" />
