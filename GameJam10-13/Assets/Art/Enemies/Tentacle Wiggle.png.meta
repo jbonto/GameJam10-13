@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: b7c8ac4e9797737468c26916190657c2
+timeCreated: 1508089607
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Tentacle Wiggle_0
+    21300002: Tentacle Wiggle_1
+    21300004: Tentacle Wiggle_2
+    21300006: Tentacle Wiggle_3
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tentacle Wiggle_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 101
+        width: 30
+        height: 78
+      alignment: 9
+      pivot: {x: 0.5707134, y: 0.049354456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tentacle Wiggle_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 101
+        width: 30
+        height: 78
+      alignment: 9
+      pivot: {x: 0.57133305, y: 0.049487088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tentacle Wiggle_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 101
+        width: 30
+        height: 78
+      alignment: 9
+      pivot: {x: 0.57199985, y: 0.04948719}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tentacle Wiggle_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1
+        width: 30
+        height: 78
+      alignment: 9
+      pivot: {x: 0.5713332, y: 0.04974361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Levelroom.unity
+    guid: 9665ddedd6cc3d347a1cb2441267d776
+  - enabled: 1
+    path: Assets/Bossroom.unity
+    guid: 00000000000000000000000000000000

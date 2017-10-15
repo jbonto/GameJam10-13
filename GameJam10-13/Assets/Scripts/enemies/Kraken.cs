@@ -17,10 +17,16 @@ public class Kraken : MonoBehaviour {
 	}
 
 	public void hit(){
+		//Debug.Log ("you bopped the Kraken");
 		health--;
 		if (health > 0) {
 			bossWater.waterDrop ();
-
+		} else {
+			bossWater.waterDrop ();
+			for (int i = 0; i < tentacles.Length; i++) {
+				Destroy (tentacles [i].gameObject);
+			}
+			Destroy (this.gameObject);
 		}
 	}
 }

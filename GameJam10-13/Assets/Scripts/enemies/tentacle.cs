@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class tentacle : MonoBehaviour {
 	public Water bossWater;
+	private Animator anim;
+	public bool poke;
 	// Use this for initialization
 	void Start () {
-		
+		anim = GetComponent<Animator> ();
+		if (poke) {
+			anim.SetTrigger ("poke");
+		}
 	}
 	
 	// Update is called once per frame
@@ -14,7 +19,7 @@ public class tentacle : MonoBehaviour {
 		
 	}
 	void OnDestroy(){
-		bossWater.waterRise ();
+		//bossWater.waterRise ();
 	}
 	public void onHit(){
 		bossWater.waterRise ();

@@ -1,15 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Water.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\playerAnim.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player.cs" Line="180" Column="6" />
-      <File FileName="Assets\Scripts\enemies\tentacle.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Harpoon.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Plank.cs" Line="1" Column="1" />
-      <File FileName="Assets\cameraScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\enemies\Enemy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Water.cs" Line="26" Column="26" />
-      <File FileName="Assets\Scripts\enemies\Kraken.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\enemies\enemyMove.cs" Line="25" Column="24" />
+      <File FileName="Assets\goToKraken.cs" Line="19" Column="38" />
+      <File FileName="Assets\Scripts\playerAnim.cs" Line="16" Column="42" />
+      <File FileName="Assets\Scripts\Player.cs" Line="157" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

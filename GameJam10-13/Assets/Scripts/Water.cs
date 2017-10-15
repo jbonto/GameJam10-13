@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Water : MonoBehaviour {
 	public float moveUp, maxY;
 	public int moveIterations, moveCount = 0;
-
+	private bool canChange = true;
+	public bool boss;
+	public GameObject Kraken;
 	// Use this for initialization
 	void Start(){
 		//
@@ -24,10 +26,14 @@ public class Water : MonoBehaviour {
 	}
 
 	public void waterRise(){
-		StartCoroutine (rise ());
+		if (canChange && this.transform.position.y < maxY) {
+			StartCoroutine (rise ());
+		}
 	}
 	public void waterDrop(){
-		StartCoroutine (drop ());
+		if (canChange) {
+			StartCoroutine (drop ());
+		}
 	}
 	IEnumerator rise(){
 		for (int i = 0; i < moveIterations; i++) {
@@ -39,11 +45,17 @@ public class Water : MonoBehaviour {
 		yield return null;
 	}
 	IEnumerator drop(){
+		canChange = false;
 		for (int x = 0; x < moveCount; x++) {
 			for (int i = 0; i < moveIterations; i++) {
 				yield return null;
 				transform.Translate (0f, (moveUp*-1f), 0f);
 			}
 		}
+		if (boss && (Kraken == null)) {
+			SceneManager.LoadScene ("Levelroom");
+		}
+		canChange = true;
+		moveCount = 0;
 	}
 }

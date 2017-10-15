@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour {
 	[Header("Player Stats")]
 	public int playerHP;
@@ -10,7 +11,7 @@ public class Player : MonoBehaviour {
 	public float jump, UWJ;
 	public bool isUW; // isUnderWater
 	public float harpoons = 2F;
-	private bool harpLoaded = true;
+	public bool harpLoaded = true;
 	public bool canMove = true;
 	//private BoxCollider2D meleeHB;
 	private CircleCollider2D meleeHB;
@@ -18,9 +19,11 @@ public class Player : MonoBehaviour {
 	public float jCR;
 	public LayerMask layer, eLayer;
 	public bool canJump;
+	public float mov;
 
 	[Header("Obects")]
-	public GameObject firePos, harpoonGO, hi;
+	public GameObject firePos, harpoonGO;
+	public GameObject checkPoint;
 
 	[Header("UI")]
 	public Text hpText;
@@ -50,12 +53,26 @@ public class Player : MonoBehaviour {
 		 * 
 		 * */
 		float hAxis = Input.GetAxis ("h");
+		mov = hAxis;
 		move (hAxis);
 		harpoonActions ();
 		if (isUW) {
 			oxygen -= Time.deltaTime;
 			breathText.text = oxygen.ToString ("F0");
+		} else {
+			if (oxygen < maxO2) {
+				oxygen += (Time.deltaTime*3f);
+				breathText.text = oxygen.ToString ("F0");
+			}
 		}
+		if((oxygen <= 0f)||(playerHP <=0)){
+			if (checkPoint) {
+				goToCheckpoint ();
+			} else {
+				SceneManager.LoadScene ("Bossroom");	
+			}
+		}
+
 	}
 
 	void move(float x){
@@ -76,6 +93,27 @@ public class Player : MonoBehaviour {
 				if (Input.GetKeyDown (jumpKey) && canJump) {
 					RB2D.velocity = new Vector2 (x * UWMS, (jump*.65f));
 				}
+			}
+		}
+	}
+
+	public void getCheckPoint(GameObject c){
+		checkPoint = c;
+	}
+
+	void goToCheckpoint(){
+		playerHP = 6;
+		hpText.text = playerHP.ToString ();
+		harpoons = 2f;
+		harpState.text = "You have a harpoon loaded.  You have "+harpoons.ToString()+" spare harpoons";
+		harpLoaded = true;
+		oxygen = maxO2;
+		breathText.text = oxygen.ToString ("F0");
+		this.transform.position = new Vector3 (checkPoint.transform.position.x, checkPoint.transform.position.y, this.transform.position.z);
+		GameObject[] harps = GameObject.FindGameObjectsWithTag ("Harpoon");
+		if (harps.Length > 0) {
+			for (int i = 0; i < harps.Length; i++) {
+				Destroy (harps [i].gameObject);
 			}
 		}
 	}
@@ -114,9 +152,9 @@ public class Player : MonoBehaviour {
 	IEnumerator jab(){
 		isMelee = true;
 		yield return new WaitForSeconds (.35f);
-		meleeHB.offset = new Vector2 (2.8f, 1.19f);
+		meleeHB.offset = new Vector2 (.56f, .17f);
 		yield return new WaitForSeconds (.65f);
-		meleeHB.offset = new Vector2 (0f, 1.19f);
+		meleeHB.offset = new Vector2 (0f, .17f);
 		isMelee = false;
 	}
 
@@ -140,13 +178,13 @@ public class Player : MonoBehaviour {
 	}
 
 	public void playerHurt(int x, float ex){
-		Debug.Log (ex);
+		//Debug.Log (ex);
 		if (canHurt) {
 			//Debug.Log ("ow");
 			playerHP -= x;
 			hpText.text = playerHP.ToString ();
 			StartCoroutine (invincFrames ());
-			/**
+			/*
 			if (ex > this.transform.position.x) {
 				RB2D.AddForce (new Vector2(0f,3f));
 				Debug.Log ("up");
@@ -176,8 +214,9 @@ public class Player : MonoBehaviour {
 			if (col.transform.tag == "Enemy") {
 				if (col.GetComponent<Enemy> ()) {
 					col.GetComponent<Enemy> ().hit ();
-				} else {
-					
+				}
+				if (col.GetComponent<Kraken> ()) {
+					col.GetComponent<Kraken> ().hit ();
 				}
 			}
 		}

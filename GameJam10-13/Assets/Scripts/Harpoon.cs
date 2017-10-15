@@ -26,7 +26,11 @@ public class Harpoon : MonoBehaviour {
 		if (col.transform.tag == "Enemy") {
 			if (!hasHit && col.transform.GetComponent<Enemy> ()) {
 				col.transform.GetComponent<Enemy> ().hit ();
-			} else if (!hasHit && col.transform.GetComponent<angler>()){
+			} else if (!hasHit && col.transform.GetComponent<angler> ()) {
+				
+			} else if (!hasHit && col.transform.GetComponent<Kraken> ()) {
+				Debug.Log ("A harpoon hit the kraken");
+				col.transform.GetComponent<Kraken> ().hit ();
 			}
 		}
 		if (col.transform.tag == "Player") {
